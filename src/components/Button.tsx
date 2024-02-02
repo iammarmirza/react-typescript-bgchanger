@@ -21,20 +21,16 @@ const colorClass: colorClass = {
 };
 
 type ButtonProps = {
-    color: string;
     onClick: (newColorClass: string) => void;
 };
 
 function Button(props: ButtonProps) {
-    const { color, onClick } = props;
+    const { onClick } = props;
 
     return (
-        <button
-            className={`outline-none px-4 py-1 text-white rounded-full ${colorClass[color]}`}
-            onClick={() => onClick(colorClass[color])}
-        >
-            {color}
-        </button>
+        <>
+        
+        </>
     );
 }
 
